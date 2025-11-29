@@ -7,14 +7,23 @@ import { ActionButtons } from './components/ActionButtons';
 import { toast, Toaster } from 'sonner';
 
 export interface CustomerData {
-  name: string;
-  email: string;
-  accountBalance: number;
-  monthlyIncome: number;
-  creditScore: number;
-  accountAge: number;
-  region: string;
-  qualityTag: string;
+  salary_6to12m_avg: number;
+  turn_cur_cr_avg_act_v2: number;
+  first_salary_income: number;
+  turn_cur_db_avg_act_v2: number;
+  avg_cur_cr_turn: number;
+  hdb_outstand_sum: number;
+  hdb_bki_active_cc_max_limit: number;
+  dp_ils_paymentssum_avg_12m: number;
+  turn_cur_db_avg_v2: number;
+  gender: string;
+  turn_cur_cr_avg_v2: number;
+  incomeValue: number;
+  by_category__amount__sum__eoperation_type_name__ishodjaschij_bystryj_platezh_sbp: number;
+  incomeValueCategory: string;
+  dp_ils_avg_salary_1y: number;
+  age: number;
+  adminarea: string; 
 }
 
 export interface Prediction {
@@ -44,63 +53,57 @@ export default function App() {
 
   const handleCustomerSubmit = (data: CustomerData) => {
     setCustomerData(data);
-    setPrediction(null);
-    setSelectedProducts([]);
-  };
-
-  const handlePredictRevenue = () => {
-    if (!customerData) return;
-
     setIsLoading(true);
     
+    // Сразу запускаем прогноз при отправке формы
     setTimeout(() => {
       const baseRevenue = 
-        customerData.accountBalance * 0.02 +
-        customerData.monthlyIncome * 0.5 +
-        customerData.creditScore * 10 +
-        customerData.accountAge * 50;
+        data.salary_6to12m_avg * 0.8 +
+        data.incomeValue * 0.6 +
+        data.dp_ils_avg_salary_1y * 0.4 +
+        data.age * 100;
 
       const revenue = Math.round(baseRevenue);
       const minRange = Math.round(revenue * 0.85);
       const maxRange = Math.round(revenue * 1.15);
 
-    let reliability = 'Средняя';
-    
-    if (customerData.creditScore > 800 && customerData.accountAge > 24) {
-      reliability = 'Очень высокая';
-    } else if (customerData.creditScore > 700 && customerData.monthlyIncome > 50000) {
-      reliability = 'Высокая';
-    } else if (customerData.creditScore < 500 || customerData.accountAge < 6) {
-      reliability = 'Низкая';
-    } else if (customerData.creditScore < 400) {
-      reliability = 'Очень низкая';
-    }
+      let reliability = 'Средняя';
+      
+      if (data.incomeValue > 100000 && data.salary_6to12m_avg > 80000) {
+        reliability = 'Очень высокая';
+      } else if (data.incomeValue > 70000 && data.dp_ils_avg_salary_1y > 60000) {
+        reliability = 'Высокая';
+      } else if (data.incomeValue < 30000 || data.salary_6to12m_avg < 25000) {
+        reliability = 'Низкая';
+      } else if (data.incomeValue < 20000) {
+        reliability = 'Очень низкая';
+      }
 
       const factors = [
         { 
-          name: 'Срок существования счета', 
-          value: customerData.accountAge,
-          impact: Math.round(customerData.accountAge * 50) 
+          name: 'Средняя зарплата 6-12 мес', 
+          value: data.salary_6to12m_avg,
+          impact: Math.round(data.salary_6to12m_avg * 0.8) 
         },
         { 
-          name: 'Ежемесячный доход', 
-          value: customerData.monthlyIncome,
-          impact: Math.round(customerData.monthlyIncome * 0.5) 
+          name: 'Текущий доход', 
+          value: data.incomeValue,
+          impact: Math.round(data.incomeValue * 0.6) 
         },
         { 
-          name: 'Баланс счёта', 
-          value: customerData.accountBalance,
-          impact: Math.round(customerData.accountBalance * 0.02) 
+          name: 'Средняя годовая зарплата', 
+          value: data.dp_ils_avg_salary_1y,
+          impact: Math.round(data.dp_ils_avg_salary_1y * 0.4) 
         },
         { 
-          name: 'Кредитный рейтинг', 
-          value: customerData.creditScore,
-          impact: Math.round(customerData.creditScore * 10) 
+          name: 'Возраст клиента', 
+          value: data.age,
+          impact: Math.round(data.age * 100) 
         },
         { 
-          name: 'Кросс-продажи', 
-          value: 85,
-          impact: Math.round(revenue * 0.12) 
+          name: 'Кредитный оборот', 
+          value: data.turn_cur_cr_avg_v2,
+          impact: Math.round(data.turn_cur_cr_avg_v2 * 0.1) 
         },
       ];
 
@@ -129,13 +132,7 @@ export default function App() {
       return;
     }
 
-    if (!customerData?.email) {
-      toast.error('Необходимо указать email клиента');
-      return;
-    }
-
-    // Отправка email
-    toast.success(`Предложение отправлено на адрес ${customerData.email}`);
+    toast.success(`Предложение отправлено клиенту`);
   };
 
   const handleSendToCallCenter = () => {
@@ -144,7 +141,7 @@ export default function App() {
       return;
     }
 
-    toast.success(`Передано в колл-центр для клиента ${customerData?.name}`);
+    toast.success(`Передано в колл-центр`);
   };
 
   const handleGenerateOffer = () => {
@@ -160,15 +157,15 @@ export default function App() {
     <div className="min-h-screen bg-[#0a0a0a]">
       <Toaster position="top-right" richColors />
       
-      <Header customerName={customerData?.name} />
+      <Header />
       
       <div className="max-w-[1400px] mx-auto px-6 py-8">
         <div className="mb-6 flex items-center gap-3 text-[#86868b] text-sm">
           <span>КЛИЕНТ</span>
           <span>→</span>
-          <span>ПРОГНОЗЫ</span>
+          <span className="text-[#86868b]">ПРОГНОЗ ДОХОДНОСТИ</span>
           <span>→</span>
-          <span className="text-[#ef3124]">ПРЕДСКАЗАНИЯ</span>
+          <span className="text-[#86868b]">ПРЕДЛОЖЕНИЯ</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -182,25 +179,10 @@ export default function App() {
 
           {/* Right Column - Прогнозы */}
           <div className="space-y-6">
-            {customerData && !prediction && (
-              <div className="bg-[#1d1d1f] border border-[#2d2d2f] rounded-xl p-6">
-                <div className="text-center py-12">
-                  <div className="text-[#86868b] mb-4">Готов для анализа профиля клиента</div>
-                  <button
-                    onClick={handlePredictRevenue}
-                    disabled={isLoading}
-                    className="px-8 py-3 bg-[#ef3124] hover:bg-[#d62915] text-white rounded-lg transition-colors disabled:opacity-50"
-                  >
-                    {isLoading ? 'Calculating...' : 'Predict Revenue'}
-                  </button>
-                </div>
-              </div>
-            )}
-            
-            {prediction && (
+            {prediction && customerData && (
               <RevenuePrediction 
                 prediction={prediction} 
-                customerData={customerData!}
+                customerData={customerData}
               />
             )}
           </div>
@@ -220,7 +202,6 @@ export default function App() {
               onSendToCallCenter={handleSendToCallCenter}
               onGenerateOffer={handleGenerateOffer}
               hasSelectedProducts={selectedProducts.length > 0}
-              customerEmail={customerData?.email}
               selectedCount={selectedProducts.length}
             />
           </div>

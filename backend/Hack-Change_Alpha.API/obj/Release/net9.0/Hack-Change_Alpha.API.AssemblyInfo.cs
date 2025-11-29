@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hack-Change_Alpha.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a441ea35ab879478cf6622f56e1657a9257f6923")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a14c940e519894f1030ef8d77bf944bc0dcd7257")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hack-Change_Alpha.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hack-Change_Alpha.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

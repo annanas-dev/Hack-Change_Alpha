@@ -112,8 +112,7 @@ export default function App() {
         setIsLoading(true);
 
         try {
-            // 🔄 ИСПОЛЬЗУЕМ C# КОНТРОЛЛЕР ВМЕСТО PYTHON ML
-            const mlResponse = await fetch('http://localhost:5000/api/predict', {
+            const mlResponse = await fetch('http://localhost:8000/predict', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -205,36 +204,52 @@ export default function App() {
                 }),
             });
 
+            console.log(' Статус ответа:', mlResponse.status, mlResponse.statusText);
             const mlResult = await mlResponse.json();
 
-            if (!mlResponse.ok) {
-                throw new Error('Prediction failed');
+            console.log('Ответ от Python ML:', mlResult);
+
+            if (!mlResult.success) {
+                throw new Error(mlResult.error || 'ML prediction failed');
             }
 
-            // 🔄 АДАПТИРУЕМ ОТВЕТ КОНТРОЛЛЕРА ПОД НАШ ФОРМАТ
-            const predictedIncome = mlResult.prediction.predictedIncomeValue;
-            const featureImportance = {
-                'Средний доход': mlResult.shapExplanation.shapValues[0] * 100,
-                'Возраст': mlResult.shapExplanation.shapValues[1] * 100,
-                'Баланс': mlResult.shapExplanation.shapValues[2] * 100,
-                'Срок счета': mlResult.shapExplanation.shapValues[3] * 100,
-                'Регион': mlResult.shapExplanation.shapValues[4] * 100,
+            const fixNumberFormat = (obj: any): any => {
+                if (typeof obj === 'string' && /^\d+,\d+$/.test(obj)) {
+                    return parseFloat(obj.replace(',', '.'));
+                }
+                if (Array.isArray(obj)) {
+                    return obj.map(fixNumberFormat);
+                }
+                if (obj && typeof obj === 'object') {
+                    const result: any = {};
+                    for (const [key, value] of Object.entries(obj)) {
+                        result[key] = fixNumberFormat(value);
+                    }
+                    return result;
+                }
+                return obj;
             };
 
+            //const fixedResult = fixNumberFormat(mlResult);
+
+            const predictedIncome = mlResult.predictedIncome;
+
+            const featureImportance = mlResult.featureImportance;
+
             const factors = Object.entries(featureImportance)
-                .map(([name, impact]) => ({
-                    name,
-                    value: getFeatureValue(data, name),
+                .map(([featureName, impact]) => ({
+                    name: formatFeatureName(featureName),
+                    value: getFeatureValue(data, featureName),
                     impact: Math.round(impact as number)
                 }))
-                .sort((a, b) => b.impact - a.impact);
+                .sort((a, b) => b.impact - a.impact)
+                .slice(0, 5); 
 
             const revenue = Math.round(predictedIncome);
             const minRange = Math.round(revenue * 0.85);
             const maxRange = Math.round(revenue * 1.15);
 
-            const reliability = mlResult.prediction.confidence > 0.8 ? 'Очень высокая' :
-                mlResult.prediction.confidence > 0.6 ? 'Высокая' : 'Средняя';
+            const reliability = determineReliability(predictedIncome, data);
 
             setPrediction({
                 revenue,
@@ -244,13 +259,13 @@ export default function App() {
                 factors
             });
 
-            toast.success('✅ Прогноз получен!');
+            toast.success('Прогноз получен!');
 
         } catch (error) {
             console.error('Prediction error:', error);
             // 🔄 FALLBACK НА СТАРУЮ ЛОГИКУ
             useFallbackPrediction(data);
-            toast.warning('⚠️ Используется базовый прогноз');
+            toast.warning('Используется базовый прогноз');
         } finally {
             setIsLoading(false);
         }
@@ -281,7 +296,54 @@ export default function App() {
             'dp_ils_avg_salary_3y': 'Средняя зарплата за 3 года',
             'curr_rur_amt_cm_avg': 'Средний остаток по текущим счетам',
             'avg_cur_db_turn': 'Средний дебетовый оборот',
-            'per_capita_income_rur_amt': 'Среднедушевой доход'
+            'per_capita_income_rur_amt': 'Среднедушевой доход',
+            'hdb_bki_total_cc_max_limit': 'Общий лимит по кредитным картам',
+            'turn_cur_cr_max_v2': 'Максимальный кредитный оборот',
+            'hdb_bki_total_pil_max_limit': 'Макс. лимит по потребительским кредитам',
+            'turn_cur_cr_sum_v2': 'Суммарный кредитный оборот',
+            'turn_cur_db_sum_v2': 'Суммарный дебетовый оборот',
+            'by_category__amount__sum__eoperation_type_name__vhodjaschij_bystryj_platezh_sbp': 'Входящие быстрые платежи СБП',
+            'avg_credit_turn_rur': 'Средний кредитный оборот в рублях',
+            'by_category__amount__sum__eoperation_type_name__perevod_po_nomeru_telefona': 'Переводы по номеру телефона',
+            'turn_cur_cr_7avg_avg_v2': '7-дневный средний кредитный оборот',
+            'dp_ils_accpayment_avg_12m': 'Средние платежи по счетам за 12 мес',
+            'curbal_usd_amt_cm_avg': 'Средний остаток в USD',
+            'turn_cur_db_max_v2': 'Максимальный дебетовый оборот',
+            'turn_other_db_max_v2': 'Макс. оборот по другим дебетовым операциям',
+            'turn_cur_cr_min_v2': 'Минимальный кредитный оборот',
+            'turn_cur_db_min_v2': 'Минимальный дебетовый оборот',
+            'avg_debet_turn_rur': 'Средний дебетовый оборот в рублях',
+            'hdb_relend_active_max_psk': 'Макс. ПСК по рефинансированию',
+            'dda_rur_amt_curr_v2': 'Текущий остаток по счетам в рублях',
+            'avg_6m_money_transactions': 'Средние денежные операции за 6 мес',
+            'pil': 'Потребительские кредиты',
+            'avg_by_category__amount__sum__cashflowcategory_name__elektronnye_dengi': 'Средние электронные платежи',
+            'dp_payoutincomedata_payout_avg_3_month': 'Средние выплаты за 3 месяца',
+            'hdb_relend_outstand_sum': 'Сумма рефинансированной задолженности',
+            'total_rur_amt_cm_avg': 'Средний общий остаток в рублях',
+            'mob_cover_days': 'Дни мобильного покрытия',
+            'curr_rur_amt_3m_avg': 'Средний остаток за 3 месяца',
+            'turn_cur_db_7avg_avg_v2': '7-дневный средний дебетовый оборот',
+            'amount_by_category_90d__summarur_amt__sum__cashflowcategory_name__vydacha_nalichnyh_v_bankomate': 'Выдача наличных в банкоматах за 90 дней',
+            'dp_ils_paymentssum_avg_6m_current': 'Текущие средние платежи за 6 мес',
+            'hdb_bki_total_ip_cnt': 'Общее количество ИП',
+            'hdb_other_outstand_sum': 'Прочая сумма задолженности',
+            'turn_save_db_min_v2': 'Минимальный оборот по сберегательным счетам',
+            'avg_by_category__amount__sum__cashflowcategory_name__odezhda': 'Средние расходы на одежду',
+            'dda_rur_amt_3m_avg': 'Средний остаток по счетам за 3 месяца',
+            'avg_amount_daily_transactions_90d': 'Средняя сумма дневных операций за 90 дней',
+            'avg_6m_all': 'Средние показатели за 6 месяцев',
+            'diff_avg_cr_db_turn': 'Разница кредитного и дебетового оборотов',
+            'dp_payoutincomedata_payout_avg_6_month': 'Средние выплаты за 6 месяцев',
+            'by_category__amount__sum__eoperation_type_name__perevod_mezhdu_svoimi_schetami': 'Переводы между своими счетами',
+            'bki_active_auto_cnt': 'Количество активных авто',
+            'avg_by_category__amount__sum__cashflowcategory_name__kosmetika': 'Средние расходы на косметику',
+            'avg_3m_all': 'Средние показатели за 3 месяца',
+            'total_rur_amt_cm_avg_period_days_ago_v2': 'Общий остаток в рублях ранее',
+            'avg_by_category__amount__sum__cashflowcategory_name__gipermarkety': 'Средние расходы в гипермаркетах',
+            'city_smart_name': 'Город',
+            'avg_by_category__amount__sum__cashflowcategory_name__vydacha_nalichnyh_v_bankomate': 'Средняя выдача наличных в банкоматах',
+            'curr_rur_amt_cm_avg_period_days_ago_v2': 'Текущий остаток в рублях ранее'
         };
         return names[name] || name;
     };
@@ -307,20 +369,69 @@ export default function App() {
             'age': data.age,
             'curr_rur_amt_cm_avg': data.curr_rur_amt_cm_avg,
             'avg_cur_db_turn': data.avg_cur_db_turn,
-            'per_capita_income_rur_amt': data.per_capita_income_rur_amt
+            'per_capita_income_rur_amt': data.per_capita_income_rur_amt,
+            'hdb_bki_total_cc_max_limit': data.hdb_bki_total_cc_max_limit,
+            'turn_cur_cr_max_v2': data.turn_cur_cr_max_v2,
+            'hdb_bki_total_pil_max_limit': data.hdb_bki_total_pil_max_limit,
+            'turn_cur_cr_sum_v2': data.turn_cur_cr_sum_v2,
+            'turn_cur_db_sum_v2': data.turn_cur_db_sum_v2,
+            'by_category__amount__sum__eoperation_type_name__vhodjaschij_bystryj_platezh_sbp': data.by_category__amount__sum__eoperation_type_name__vhodjaschij_bystryj_platezh_sbp,
+            'dp_ils_paymentssum_avg_6m': data.dp_ils_paymentssum_avg_6m,
+            'avg_credit_turn_rur': data.avg_credit_turn_rur,
+            'by_category__amount__sum__eoperation_type_name__perevod_po_nomeru_telefona': data.by_category__amount__sum__eoperation_type_name__perevod_po_nomeru_telefona,
+            'turn_cur_cr_7avg_avg_v2': data.turn_cur_cr_7avg_avg_v2,
+            'dp_ils_accpayment_avg_12m': data.dp_ils_accpayment_avg_12m,
+            'curbal_usd_amt_cm_avg': data.curbal_usd_amt_cm_avg,
+            'turn_cur_db_max_v2': data.turn_cur_db_max_v2,
+            'turn_other_db_max_v2': data.turn_other_db_max_v2,
+            'turn_cur_cr_min_v2': data.turn_cur_cr_min_v2,
+            'turn_cur_db_min_v2': data.turn_cur_db_min_v2,
+            'avg_debet_turn_rur': data.avg_debet_turn_rur,
+            'hdb_relend_active_max_psk': data.hdb_relend_active_max_psk,
+            'dda_rur_amt_curr_v2': data.dda_rur_amt_curr_v2,
+            'avg_6m_money_transactions': data.avg_6m_money_transactions,
+            'pil': data.pil,
+            'avg_by_category__amount__sum__cashflowcategory_name__elektronnye_dengi': data.avg_by_category__amount__sum__cashflowcategory_name__elektronnye_dengi,
+            'dp_payoutincomedata_payout_avg_3_month': data.dp_payoutincomedata_payout_avg_3_month,
+            'hdb_relend_outstand_sum': data.hdb_relend_outstand_sum,
+            'total_rur_amt_cm_avg': data.total_rur_amt_cm_avg,
+            'mob_cover_days': data.mob_cover_days,
+            'curr_rur_amt_3m_avg': data.curr_rur_amt_3m_avg,
+            'turn_cur_db_7avg_avg_v2': data.turn_cur_db_7avg_avg_v2,
+            'amount_by_category_90d__summarur_amt__sum__cashflowcategory_name__vydacha_nalichnyh_v_bankomate': data.amount_by_category_90d__summarur_amt__sum__cashflowcategory_name__vydacha_nalichnyh_v_bankomate,
+            'dp_ils_paymentssum_avg_6m_current': data.dp_ils_paymentssum_avg_6m_current,
+            'hdb_bki_total_ip_cnt': data.hdb_bki_total_ip_cnt,
+            'hdb_other_outstand_sum': data.hdb_other_outstand_sum,
+            'turn_save_db_min_v2': data.turn_save_db_min_v2,
+            'avg_by_category__amount__sum__cashflowcategory_name__odezhda': data.avg_by_category__amount__sum__cashflowcategory_name__odezhda,
+            'dda_rur_amt_3m_avg': data.dda_rur_amt_3m_avg,
+            'avg_amount_daily_transactions_90d': data.avg_amount_daily_transactions_90d,
+            'avg_6m_all': data.avg_6m_all,
+            'diff_avg_cr_db_turn': data.diff_avg_cr_db_turn,
+            'dp_payoutincomedata_payout_avg_6_month': data.dp_payoutincomedata_payout_avg_6_month,
+            'by_category__amount__sum__eoperation_type_name__perevod_mezhdu_svoimi_schetami': data.by_category__amount__sum__eoperation_type_name__perevod_mezhdu_svoimi_schetami,
+            'bki_active_auto_cnt': data.bki_active_auto_cnt,
+            'avg_by_category__amount__sum__cashflowcategory_name__kosmetika': data.avg_by_category__amount__sum__cashflowcategory_name__kosmetika,
+            'avg_3m_all': data.avg_3m_all,
+            'total_rur_amt_cm_avg_period_days_ago_v2': data.total_rur_amt_cm_avg_period_days_ago_v2,
+            'avg_by_category__amount__sum__cashflowcategory_name__gipermarkety': data.avg_by_category__amount__sum__cashflowcategory_name__gipermarkety,
+            'avg_by_category__amount__sum__cashflowcategory_name__vydacha_nalichnyh_v_bankomate': data.avg_by_category__amount__sum__cashflowcategory_name__vydacha_nalichnyh_v_bankomate,
+            'curr_rur_amt_cm_avg_period_days_ago_v2': data.curr_rur_amt_cm_avg_period_days_ago_v2
         };
         return featureMap[featureName] || 0;
     };
 
     const determineReliability = (predictedIncome: number, data: CustomerData): string => {
-        // 🔧 ЛОГИКА ОПРЕДЕЛЕНИЯ НАДЕЖНОСТИ НА ОСНОВЕ ML ПРЕДСКАЗАНИЯ
-        const incomeStability = Math.abs(predictedIncome - data.incomeValue) / data.incomeValue;
+        // Сравниваем предсказанный доход с текущим доходом клиента
+        const incomeDifference = Math.abs(predictedIncome - data.incomeValue);
+        const relativeDifference = incomeDifference / data.incomeValue;
 
-        if (incomeStability < 0.1 && data.salary_6to12m_avg > 80000) {
+        // Определяем надежность на основе разницы и стабильности доходов
+        if (relativeDifference < 0.1 && data.salary_6to12m_avg > 50000) {
             return 'Очень высокая';
-        } else if (incomeStability < 0.2 && data.dp_ils_avg_salary_1y > 60000) {
+        } else if (relativeDifference < 0.2 && data.dp_ils_avg_salary_1y > 40000) {
             return 'Высокая';
-        } else if (incomeStability > 0.5 || data.incomeValue < 30000) {
+        } else if (relativeDifference > 0.5 || data.incomeValue < 20000) {
             return 'Низкая';
         } else {
             return 'Средняя';

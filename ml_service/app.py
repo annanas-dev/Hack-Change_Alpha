@@ -61,6 +61,27 @@ def predict():
         data = request.json
         print("📨 Получены данные для предсказания:")
         
+        # Функция для безопасного преобразования в число
+        def safe_float(value):
+            if isinstance(value, (int, float)):
+                return float(value)
+            if isinstance(value, str):
+                # Заменяем запятые на точки и убираем пробелы
+                cleaned = value.replace(',', '.').replace(' ', '')
+                try:
+                    return float(cleaned)
+                except ValueError:
+                    return 0.0
+            return 0.0
+        
+        # Определяем категориальные фичи (должны быть строками)
+        categorical_features = {
+            'gender', 'adminarea', 'city_smart_name', 'incomeValueCategory',
+            'hdb_bki_active_cc_max_limit', 'hdb_bki_total_cc_max_limit', 
+            'hdb_bki_total_pil_max_limit', 'hdb_bki_total_ip_cnt',
+            'bki_active_auto_cnt'
+            }
+        
         # Преобразуем названия полей из C# в формат модели
         feature_mapping = {
             'salary6To12mAvg': 'salary_6to12m_avg',
@@ -80,8 +101,6 @@ def predict():
             'dpIlsAvgSalary1y': 'dp_ils_avg_salary_1y',
             'age': 'age',
             'adminArea': 'adminarea',
-            
-            # Дополнительные поля
             'hdbBkiTotalCcMaxLimit': 'hdb_bki_total_cc_max_limit',
             'turnCurCrMaxV2': 'turn_cur_cr_max_v2',
             'hdbBkiTotalPilMaxLimit': 'hdb_bki_total_pil_max_limit',
@@ -137,10 +156,24 @@ def predict():
             'currRurAmtCmAvgPeriodDaysAgoV2': 'curr_rur_amt_cm_avg_period_days_ago_v2'
         }
         
-        # Создаем DataFrame с правильными названиями фич
+        # Создаем DataFrame с преобразованными значениями
         features_dict = {}
         for csharp_name, model_name in feature_mapping.items():
-            features_dict[model_name] = data.get(csharp_name, 0)
+            value = data.get(csharp_name, 0)
+            
+            if model_name in categorical_features:
+                # 🔥 Для категориальных фичей преобразуем в строку
+                if value is None:
+                    value = ""
+                elif isinstance(value, (int, float)):
+                    value = str(int(value))  # Преобразуем в целое число, затем в строку
+                else:
+                    value = str(value)
+            else:
+                # 🔥 Для числовых фичей преобразуем в float
+                value = safe_float(value)
+            
+            features_dict[model_name] = value
         
         features_df = pd.DataFrame([features_dict])
         
@@ -151,22 +184,29 @@ def predict():
             missing_features = [f for f in model.feature_names_ if f not in features_df.columns]
             
             if missing_features:
-                print(f"⚠️ Отсутствующие фичи в данных: {missing_features}")
-                # Заполняем недостающие фичи нулями
+                print(f"Отсутствующие фичи в данных: {missing_features}")
+                # Заполняем недостающие фичи значениями по умолчанию
                 for feature in missing_features:
-                    features_df[feature] = 0
+                    if feature in categorical_features:
+                        features_df[feature] = ""
+                    else:
+                        features_df[feature] = 0.0
             
             features_df = features_df[model.feature_names_]
         
-        print(f"🔧 Features для предсказания: {list(features_df.columns)}")
-        print(f"📊 Количество фич: {len(features_df.columns)}")
-        print(f"📊 Данные: {features_df.iloc[0].to_dict()}")
+        print(f"Features для предсказания: {list(features_df.columns)}")
+        print(f"Данные после преобразования: {features_df.iloc[0].to_dict()}")
+        
+        # Убедимся, что категориальные фичи имеют правильный тип
+        for col in features_df.columns:
+            if col in categorical_features:
+                features_df[col] = features_df[col].astype(str)
         
         # Предсказание
         prediction = model.predict(features_df)[0]
-        print(f"🎯 Предсказанный доход: {prediction:.2f}")
+        print(f"Предсказанный доход: {prediction:.2f}")
         
-        # CatBoost Feature Importance (вместо SHAP)
+        # CatBoost Feature Importance
         feature_importance_scores = model.get_feature_importance()
         
         # Создаем словарь важности признаков
@@ -182,19 +222,19 @@ def predict():
         
         # Берем топ-10 самых важных признаков
         top_features = dict(sorted(feature_importance.items(), key=lambda x: x[1], reverse=True)[:10])
-        print(f"📈 Топ-10 важных признаков: {top_features}")
+        print(f"Топ-10 важных признаков: {top_features}")
         
         return jsonify({
             "success": True,
             "predictedIncome": float(prediction),
             "featureImportance": top_features,
-            "baseValue": float(prediction),  # Используем prediction как base value
-            "shapValues": list(top_features.values()),  # Используем importance values
+            "baseValue": float(prediction),
+            "shapValues": list(top_features.values()),
             "modelType": "CatBoost"
         })
         
     except Exception as e:
-        print(f"❌ Ошибка предсказания: {e}")
+        print(f"Ошибка предсказания: {e}")
         import traceback
         traceback.print_exc()
         
@@ -215,6 +255,6 @@ def get_features():
     })
 
 if __name__ == '__main__':
-    print("🚀 Запуск ML сервиса на http://localhost:8000")
-    print("📁 Убедитесь что income_model.cbm находится в той же папке")
+    print("Запуск ML сервиса на http://localhost:8000")
+    print("Убедитесь что income_model.cbm находится в той же папке")
     app.run(host='localhost', port=8000, debug=True)

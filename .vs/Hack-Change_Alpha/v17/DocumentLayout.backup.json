@@ -7,6 +7,38 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ml_service\\app.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hack-Change_Alpha.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\build\\assets\\index-CJ1EtaXP.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:build\\assets\\index-CJ1EtaXP.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\ml_service\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ml_service\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\RevenuePrediction.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\RevenuePrediction.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\CustomerForm.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\CustomerForm.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\ProductRecommendation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hack-Change_Alpha.API\\Models\\ProductRecommendation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,18 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\ProductRecommendation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hack-Change_Alpha.API\\Models\\ProductRecommendation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hack-Change_Alpha.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Controllers\\PredictController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,7 +71,7 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hack-Change_Alpha.API\\Services\\IMlService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Source\\Repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\MlService.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\MlService.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hack-Change_Alpha.API\\Services\\MlService.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
@@ -61,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\ClientDataRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hack-Change_Alpha.API\\Models\\ClientDataRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\ml_service\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ml_service\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -77,14 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\ActionButtons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\ActionButtons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\RevenuePrediction.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\RevenuePrediction.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\CustomerForm.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\CustomerForm.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\ui\\chart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -166,7 +174,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-30T02:28:17.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ProductRecommendation.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\ProductRecommendation.cs",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Models\\ProductRecommendation.cs",
@@ -174,73 +194,56 @@
               "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Models\\ProductRecommendation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T01:52:55.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RecommendationService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\RecommendationService.cs",
-              "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Services\\RecommendationService.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\RecommendationService.cs",
-              "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Services\\RecommendationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T10:28:57.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRecommendationService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs",
-              "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs",
-              "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T10:25:49.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T01:52:55.108Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PredictionResult.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs",
-              "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs",
-              "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T01:52:24.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Program.cs",
-              "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T08:54:21.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "App.tsx",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\App.tsx",
               "RelativeDocumentMoniker": "src\\App.tsx",
               "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\App.tsx",
               "RelativeToolTip": "src\\App.tsx",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAiwPwAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAANsAAAAAAAAAAAAhwOgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-11-29T09:01:53.126Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerForm.tsx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\CustomerForm.tsx",
+              "RelativeDocumentMoniker": "src\\components\\CustomerForm.tsx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\CustomerForm.tsx",
+              "RelativeToolTip": "src\\components\\CustomerForm.tsx",
+              "ViewState": "AgIAAFcCAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-29T08:54:59.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RevenuePrediction.tsx",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\RevenuePrediction.tsx",
+              "RelativeDocumentMoniker": "src\\components\\RevenuePrediction.tsx",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\RevenuePrediction.tsx",
+              "RelativeToolTip": "src\\components\\RevenuePrediction.tsx",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwCcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-29T17:46:54.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "requirements.txt",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\ml_service\\requirements.txt",
+              "RelativeDocumentMoniker": "ml_service\\requirements.txt",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\ml_service\\requirements.txt",
+              "RelativeToolTip": "ml_service\\requirements.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-29T20:57:24.485Z"
             },
             {
               "$type": "Document",
@@ -250,14 +253,75 @@
               "RelativeDocumentMoniker": "ml_service\\app.py",
               "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\ml_service\\app.py",
               "RelativeToolTip": "ml_service\\app.py",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAcwNMAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-11-29T20:54:09.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Program.cs",
+              "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T08:54:21.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index-CJ1EtaXP.js",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\build\\assets\\index-CJ1EtaXP.js",
+              "RelativeDocumentMoniker": "build\\assets\\index-CJ1EtaXP.js",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\build\\assets\\index-CJ1EtaXP.js",
+              "RelativeToolTip": "build\\assets\\index-CJ1EtaXP.js",
+              "ViewState": "AgIAAIoAAAAAAAAAAADwv5cAAABguQEAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-30T07:45:55.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PredictionResult.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs",
+              "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs",
+              "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Models\\PredictionResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T01:52:24.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRecommendationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs",
+              "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs",
+              "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Services\\IRecommendationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T10:25:49.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RecommendationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\RecommendationService.cs",
+              "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Services\\RecommendationService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\RecommendationService.cs",
+              "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Services\\RecommendationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T10:28:57.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "PredictController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Controllers\\PredictController.cs",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Controllers\\PredictController.cs",
@@ -265,12 +329,11 @@
               "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Controllers\\PredictController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T09:48:10.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T09:48:10.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "API_CONTRACT.md",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\API_CONTRACT.md",
               "RelativeDocumentMoniker": "API_CONTRACT.md",
@@ -278,12 +341,11 @@
               "RelativeToolTip": "API_CONTRACT.md",
               "ViewState": "AgIAAA8AAAAAAAAAAAAcwBMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-29T09:50:05.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T09:50:05.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "MlPredictionRequest.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\MlPredictionRequest.cs",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Models\\MlPredictionRequest.cs",
@@ -291,12 +353,11 @@
               "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Models\\MlPredictionRequest.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAnwEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:49:35.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T20:49:35.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "MlPredictionResponse.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\MlPredictionResponse.cs",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Models\\MlPredictionResponse.cs",
@@ -304,12 +365,11 @@
               "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Models\\MlPredictionResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T01:24:19.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T01:24:19.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "IMlService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\IMlService.cs",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Services\\IMlService.cs",
@@ -317,25 +377,23 @@
               "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Services\\IMlService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T10:25:17.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T10:25:17.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "MlService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Source\\Repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\MlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\MlService.cs",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Services\\MlService.cs",
-              "ToolTip": "C:\\Users\\user\\Source\\Repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\MlService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\MlService.cs",
               "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Services\\MlService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:50:35.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T20:50:35.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "CsvDataService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Services\\CsvDataService.cs",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Services\\CsvDataService.cs",
@@ -343,12 +401,11 @@
               "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Services\\CsvDataService.cs",
               "ViewState": "AgIAAPYAAAAAAAAAAAAkwDYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T14:41:19.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T14:41:19.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "ClientDataRequest.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Models\\ClientDataRequest.cs",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Models\\ClientDataRequest.cs",
@@ -356,25 +413,11 @@
               "RelativeToolTip": "backend\\Hack-Change_Alpha.API\\Models\\ClientDataRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T10:18:49.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T10:18:49.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "requirements.txt",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\ml_service\\requirements.txt",
-              "RelativeDocumentMoniker": "ml_service\\requirements.txt",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\ml_service\\requirements.txt",
-              "RelativeToolTip": "ml_service\\requirements.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-29T20:57:24.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "index.css",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\index.css",
               "RelativeDocumentMoniker": "src\\index.css",
@@ -386,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "AutocompleteController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Controllers\\AutocompleteController.cs",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Controllers\\AutocompleteController.cs",
@@ -398,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "ActionButtons.tsx",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\ActionButtons.tsx",
               "RelativeDocumentMoniker": "src\\components\\ActionButtons.tsx",
@@ -410,31 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RevenuePrediction.tsx",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\RevenuePrediction.tsx",
-              "RelativeDocumentMoniker": "src\\components\\RevenuePrediction.tsx",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\RevenuePrediction.tsx",
-              "RelativeToolTip": "src\\components\\RevenuePrediction.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-11-29T17:46:54.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CustomerForm.tsx",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\CustomerForm.tsx",
-              "RelativeDocumentMoniker": "src\\components\\CustomerForm.tsx",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\CustomerForm.tsx",
-              "RelativeToolTip": "src\\components\\CustomerForm.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-11-29T08:54:59.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "chart.tsx",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\ui\\chart.tsx",
               "RelativeDocumentMoniker": "src\\components\\ui\\chart.tsx",
@@ -446,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "TestDatabase.csv",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Data\\TestDatabase.csv",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Data\\TestDatabase.csv",
@@ -458,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "ProductRecommendations.tsx",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\ProductRecommendations.tsx",
               "RelativeDocumentMoniker": "src\\components\\ProductRecommendations.tsx",
@@ -470,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "use-mobile.ts",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\ui\\use-mobile.ts",
               "RelativeDocumentMoniker": "src\\components\\ui\\use-mobile.ts",
@@ -482,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Header.tsx",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\components\\Header.tsx",
               "RelativeDocumentMoniker": "src\\components\\Header.tsx",
@@ -494,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ThemeToggle.tsx",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\ThemeToggle.tsx",
               "RelativeDocumentMoniker": "src\\ThemeToggle.tsx",
@@ -506,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -518,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\appsettings.json",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\appsettings.json",
@@ -530,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "vite.config.ts",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\vite.config.ts",
               "RelativeDocumentMoniker": "vite.config.ts",
@@ -542,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\Properties\\launchSettings.json",
@@ -554,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "backend\\Hack-Change_Alpha.API\\appsettings.Development.json",
@@ -566,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "index-DJUT-TU2.js",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\build\\assets\\index-DJUT-TU2.js",
               "RelativeDocumentMoniker": "build\\assets\\index-DJUT-TU2.js",
@@ -578,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\backend\\.gitignore",
               "RelativeDocumentMoniker": "backend\\.gitignore",
@@ -590,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "main.tsx",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Hack-Change_Alpha\\src\\main.tsx",
               "RelativeDocumentMoniker": "src\\main.tsx",

@@ -32,7 +32,7 @@ https://drive.google.com/file/d/11z87dcdZKQRR01-kl-QDLaZIjl09op1W/view
 ### **Frontend**
 - React + TypeScript + Vite  
 - Tailwind CSS  
-- Reacharts / D3.js (SHAP)  
+- Reacharts (SHAP)  
 - Context API  
 
 ### **Backend**
@@ -72,4 +72,3 @@ dotnet run
 npm install
 npm run dev
 8. Открыть в браузере адрес, который покажет Vite
-   обычно http://localhost:5173

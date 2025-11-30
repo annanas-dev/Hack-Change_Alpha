@@ -71,3 +71,6 @@ npm install
 npm run dev
 8. Открыть в браузере адрес, который покажет Vite
    (обычно http://localhost:5173)
+## Ссылка на видео, демонстрирующее работоспособность прототипа
+https://drive.google.com/file/d/11z87dcdZKQRR01-kl-QDLaZIjl09op1W/view
+

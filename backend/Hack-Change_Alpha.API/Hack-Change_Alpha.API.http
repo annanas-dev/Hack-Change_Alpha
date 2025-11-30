@@ -1,0 +1,6 @@
+@Hack_Change_Alpha.API_HostAddress = http://localhost:5045
+
+GET {{Hack_Change_Alpha.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

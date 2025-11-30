@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "QTxi5scD7wM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\Hack-Change_Alpha\\backend\\Hack-Change_Alpha.API\\Hack-Change_Alpha.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\csvhelper\\33.1.0\\csvhelper.33.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.8\\microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

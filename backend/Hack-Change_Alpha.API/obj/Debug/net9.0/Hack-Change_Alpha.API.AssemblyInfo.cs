@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hack-Change_Alpha.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a14c940e519894f1030ef8d77bf944bc0dcd7257")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfa4063b9a9394554816281f11238392898be2d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hack-Change_Alpha.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hack-Change_Alpha.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

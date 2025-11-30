@@ -23,13 +23,17 @@ export function ActionButtons({
         <h2 className="text-[#f5f5f7] text-xl">5. ДЕЙСТВИЯ С ВЫБРАННЫМИ ПРОГНОЗАМИ</h2>
       </div>
 
-      <div className="space-y-4">
-        <div className="bg-[#0a0a0a] border border-[#2d2d2f] rounded-lg p-4">
-          <div className="text-[#86868b] text-sm mb-2">Электронная почта клиента:</div>
-          <div className="text-[#f5f5f7] font-mono text-sm">
-            {customerEmail || 'Электронная почта не указана'}
-          </div>
-        </div>
+          <div className="space-y-4">
+              {/* Поле для ввода email */}
+              <div className="space-y-2">
+                  <label className="text-[#86868b] text-sm">Электронная почта клиента</label>
+                  <input
+                      type="email"
+                      placeholder="client@example.com"
+                      value={customerEmail}
+                      className="w-full bg-[#0a0a0a] border border-[#2d2d2f] rounded-lg px-4 py-2.5 text-[#f5f5f7] placeholder:text-[#4a4a4a] focus:outline-none focus:border-[#ef3124] transition-colors"
+                  />
+              </div>
 
         <div className="grid grid-cols-3 gap-3">
           <button

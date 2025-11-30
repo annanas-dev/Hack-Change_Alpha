@@ -16,8 +16,23 @@
 - **Состояние**: React Hooks + Context API
 
 ### Предварительные требования
-- Node.js 18+ 
-- npm или yarn
+Node.js 18+
+.NET 9.0 SDK
+Python 3.8+
+npm или yarn
+2. Python зависимости:
+pip install catboost flask>=2.3.0 flask-cors>=4.0.0 pandas>=2.1.0 numpy>=1.24.0 scikit-learn>=1.3.0 lightgbm==4.1.0 joblib>=1.3.0
+3. Запуск ML-сервиса:
+cd ml_service
+python app.py
+4. Запуск бэкенда API:
+cd backend/Hack-Change_Alpha.API
+dotnet clean
+dotnet build
+dotnet run
+5. Запуск фронтенда:
+npm install
+npm run dev
 
 ### Установка и запуск
 1. Клонировать репозиторий

@@ -1,9 +1,9 @@
 # Эксперт по Альфа-прибыли  
 AI-система прогнозирования доходов клиентов Альфа-Банка и персональных продуктовых рекомендаций
 
-Ссылка на видео
+## Ссылка на видео, демонстрирующее работоспособность прототипа
+https://drive.google.com/file/d/11z87dcdZKQRR01-kl-QDLaZIjl09op1W/view
 
-https://drive.google.com/file/d/11z87dcdZKQRR01-kl-QDLaZIjl09op1W/view?usp=drive_link
 ## 🧠 О проекте
 Решение создано для хакатона **Hack&Change 2025 (Альфа-Банк)**.
 
@@ -32,8 +32,7 @@ https://drive.google.com/file/d/11z87dcdZKQRR01-kl-QDLaZIjl09op1W/view?usp=drive
 ### **Frontend**
 - React + TypeScript + Vite  
 - Tailwind CSS  
-- Axios  
-- Chart.js / D3.js (SHAP)  
+- Reacharts / D3.js (SHAP)  
 - Context API  
 
 ### **Backend**
@@ -73,4 +72,4 @@ dotnet run
 npm install
 npm run dev
 8. Открыть в браузере адрес, который покажет Vite
-   (обычно http://localhost:5173)
+   обычно http://localhost:5173
